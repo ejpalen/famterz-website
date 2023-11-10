@@ -60,8 +60,8 @@ const Contact = () => {
           >
             <h1>Contact Us</h1>
             <p>
-              If you have any inquiries or face any difficulty, FAMTERz will
-              respond to you as soon as possible.
+              If you have any inquiries or face any difficulty, we will respond
+              to you as soon as possible.
             </p>
           </div>
           <div className="contact-right">
