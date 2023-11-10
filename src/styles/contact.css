@@ -1,0 +1,123 @@
+.App.isContact{
+    height: 100vh; 
+    position: relative;
+}
+.contact-container{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 100px;
+    margin: 100px;
+}
+
+
+.contact-left{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 40px;
+    gap: 20px;
+}
+
+.contact-left h1, .contact-left p{
+    color: white;
+}
+
+.contact-left h1{
+    font-size: 60px;
+}
+
+.contact-left p{
+    font-size: 24px;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-column{
+    display: flex;
+    gap: 20px;
+}
+
+.input-column .input{
+    flex: 1;
+}
+
+
+.input input, .input textarea{
+    padding: 10px;
+    background-color: #F8F9FA;
+    border: none;
+    border: 1px solid #C3CCD5;
+    border-radius: 5px;
+}
+
+.submit{
+    font-weight: 800;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+
+.profile-details .submit{
+    width: fit-content;
+    padding: 10px 40px;
+}
+
+@media(max-width: 1000px){
+    .contact{
+        gap: 50px;
+    }
+}
+
+@media(max-width: 900px){
+    .contact{
+        margin: 100px 25px;
+        gap: 25px;
+    }
+
+    .contact-left h1{
+        font-size: 40px;
+    }
+
+    .contact-left{
+        padding: 25px;
+    }
+}
+
+@media(max-width: 700px){
+.contact{
+    grid-template-columns: 1fr;
+}
+
+.contact-container {
+    position: absolute;
+    top: 25px;
+    transform: translate(0);
+}
+}

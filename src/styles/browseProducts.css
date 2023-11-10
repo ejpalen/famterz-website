@@ -1,0 +1,116 @@
+.BrowseProductsHeader-container{
+    height: 250px;
+}
+
+.BrowseProductsHeader-container .hero-text{
+    position: absolute;
+top: auto;
+margin-left: 50px;
+transform: inherit;
+bottom: 50px;
+}
+
+.BrowseProductsHeader-container .hero-text h1{
+    font-size: 60px;
+}
+
+.BrowseProducts .bestSellers-section{
+    padding: 50px;
+    margin-top: -50px;
+}
+
+.BrowseProducts .bestSellers-section-products{
+    margin-top: 25px;
+    gap: 50px 25px;
+}
+
+
+.BrowseProducts{
+    position: relative;
+    padding-bottom: 100px;
+    background-color: #F8F9FA;
+}
+
+
+.dropdown {
+    position: relative;
+    margin-top: 15px;
+    z-index: 1000;
+  }
+  
+  .dropdown::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 1000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #222;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    border-right: 2px solid rgba(255, 255, 255, 0);
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .dropdown.active::before {
+    top: 20px;
+    transform: rotate(-225deg);
+  }
+  
+  .dropdown input {
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: none;
+  }
+  
+  .dropdown .options {
+    position: absolute;
+    top:45px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10vmax);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .dropdown.active .options {
+    display: block;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown .options div {
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+  
+  .dropdown .options div:hover {
+    background: linear-gradient(39deg, #AE6924 0%, #CB891E 21.16%, #FCDA6A 39.02%, #DDA63B 59.37%, #B06B23 77.23%), #FFF;
+  }
+
+  @media (max-width: 700px){
+    .BrowseProducts .bestSellers-section{
+      margin-top: 0;
+      padding: 50px 25px;
+    }
+
+    .BrowseProducts{
+      padding-bottom: 50px;
+    }
+
+    .BrowseProductsHeader-container .hero-text{
+      margin-left: 25px;
+      bottom: 25px;
+    }
+
+  }

@@ -1,0 +1,81 @@
+.about .hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+}
+
+.about .bg{
+    background-position: bottom;
+    background-attachment: initial;
+}
+
+.about .hero-text{
+    margin: 0 25px;
+}
+
+.founder-note{
+    background-color: black;
+    top: -85px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+    padding: 50px 100px;
+}
+
+.founder-note-right{
+    width: 500px;
+}
+
+.founder-note-right p{
+    font-size: 24px
+}
+
+.founder-note p{
+    color: white;
+}
+
+.founder-note h1, .founder-note h2{
+    color: white;
+}
+
+.founder-note-left h2{
+    font-size: 30px;
+}
+
+.founder-name{
+    font-size: 40px;
+    font-weight: 800;
+    background: linear-gradient(39deg, #AE6924 0%, #CB891E 21.16%, #FCDA6A 39.02%, #DDA63B 59.37%, #B06B23 77.23%), #FFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.founder-note-left h1{
+    font-size: 90px;
+    background: linear-gradient(39deg, #AE6924 0%, #CB891E 21.16%, #FCDA6A 39.02%, #DDA63B 59.37%, #B06B23 77.23%), #FFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .footerCTA-section{
+    top: -85px;
+    position: relative;
+    margin-bottom: -85px;
+}
+
+@media (max-width: 700px){
+    .founder-note{
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .founder-note-right{
+        border-top: 1px solid #404040;
+        padding: 50px 0;
+        width: 100%;
+    }
+}
