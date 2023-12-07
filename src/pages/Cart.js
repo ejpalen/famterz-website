@@ -20,8 +20,7 @@ const Cart = () => {
     // Retrieve cart items from local storage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(cart);
-    setProducts(products);
-  }, []);
+  }, [products]); // Include 'products' in the dependency array
 
   const removeFromCart = (itemId) => {
     // Remove the item from cartItems
@@ -52,6 +51,8 @@ const Cart = () => {
     setCartItems(updatedCartItems);
     localStorage.setItem("cart", JSON.stringify(updatedCartItems));
   };
+
+  setProducts(products);
 
   return (
     <>

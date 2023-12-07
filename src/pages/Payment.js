@@ -29,6 +29,8 @@ const Payment = () => {
     // Retrieve cart items from local storage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(cart);
+    setProducts(products);
+    setProduct(product);
   }, []);
 
   const calculateTotal = () => {
