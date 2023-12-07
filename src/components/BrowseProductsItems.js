@@ -1,4 +1,3 @@
-import arrow from "../images/right-arrow-icon.png";
 import { Products } from "../Products";
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -30,7 +29,7 @@ const BrowseProductsItems = () => {
     } else {
       setProducts(allProducts);
     }
-  }, [currentFilter]);
+  }, [currentFilter, allProducts]);
 
   return (
     <div className="bestSellers-section">

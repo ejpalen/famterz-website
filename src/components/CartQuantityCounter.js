@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CartQuantityCounter = (props) => {
   const [counter, setCounter] = useState(props.productQuantity);

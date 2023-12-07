@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
-
 import CloudWristRestUniverse3in1a from "./images/products/CloudWristRestUniverse3in1a.png";
 import CloudWristRestUniverse3in1b from "./images/products/CloudWristRestUniverse3in1b.png";
 import CloudWristRestUniverse3in1c from "./images/products/CloudWristRestUniverse3in1c.png";

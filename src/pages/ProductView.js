@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Products } from "../Products";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import ScrollTopSnap from "../components/ScrollTopSnap";
 import QuantityCounter from "../components/QuantityCounter";
 import Footer from "../components/footer";
@@ -34,6 +34,7 @@ const ProductView = () => {
   }, [products, id]);
 
   const handleAddToCart = (quantity) => {
+    setProducts(products);
     setButtonText("ADDED TO CART!");
     setButtonClass("addedToCart");
 
@@ -85,11 +86,7 @@ const ProductView = () => {
                   >
                     {Object.values(product.image).map((image, index) => (
                       <SwiperSlide>
-                        <img
-                          key={index}
-                          src={image}
-                          alt={`Image ${index + 1}`}
-                        />
+                        <img key={index} src={image} alt={`${index + 1}`} />
                       </SwiperSlide>
                     ))}
                   </Swiper>

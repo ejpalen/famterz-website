@@ -54,10 +54,10 @@ const footerCTA = () => {
             <h2>Customer Care</h2>
           </div>
           <div className="footer-contents">
-            <a href="">Be Our Brand Partner</a>
-            <a href="">Frequently Asked Questions</a>
-            <a href="">Track Your Cash on Delivery Order</a>
-            <a href="">How to Buy</a>
+            <NavLink to="/">Be Our Brand Partner</NavLink>
+            <NavLink to="/">Frequently Asked Questions</NavLink>
+            <NavLink to="/">Track Your Cash on Delivery Order</NavLink>
+            <NavLink to="/">How to Buy</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
           </div>
         </div>

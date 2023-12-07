@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import BrowseProductsHeader from "../components/BrowseProductsHeader";
-import BrowseProductsItems from "../components/BrowseProductsItems";
 import Footer from "../components/footer";
-import CartQuantityCounter from "../components/CartQuantityCounter";
 import "../styles/browseProducts.css";
 import "../styles/main.css";
 import "../styles/cart.css";

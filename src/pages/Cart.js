@@ -3,10 +3,8 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import BrowseProductsHeader from "../components/BrowseProductsHeader";
-import BrowseProductsItems from "../components/BrowseProductsItems";
 import Footer from "../components/footer";
 import CartQuantityCounter from "../components/CartQuantityCounter";
-import image from "../images/products/MousePad1b.png";
 import "../styles/browseProducts.css";
 import "../styles/main.css";
 import "../styles/cart.css";
@@ -16,13 +14,13 @@ import { Products } from "../Products";
 const Cart = () => {
   const allProducts = Products();
   const [products, setProducts] = useState(allProducts);
-  const [product, setProduct] = useState(null);
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     // Retrieve cart items from local storage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(cart);
+    setProducts(products);
   }, []);
 
   const removeFromCart = (itemId) => {
