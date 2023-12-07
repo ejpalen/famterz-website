@@ -20,7 +20,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 40px;
     gap: 20px;
 }
